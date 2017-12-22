@@ -13,9 +13,9 @@ zuul:
         path: /item-configuracao-service/**
         serviceId: item-configuracao-service
         stripPrefix: true
-    hardware-item-configuracao-service:
-        path: /hardware-item-configuracao-service/**
-        serviceId: hardware-item-configuracao
+    predictor-app-test:
+        path: /predictor-app-test/**
+        serviceId: predictor-app-test
         stripPrefix: true
     predictor-item-configuracao-composite:
         path: /predictor-item-configuracao-composite/**
