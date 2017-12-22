@@ -5,3 +5,19 @@ eureka:
     client:
         serviceUrl:
              defaultZone: http://localhost:8761/eureka/
+zuul:
+  debug:
+    request: true
+  routes:
+    item-configuracao-service:
+        path: /item-configuracao-service/**
+        serviceId: item-configuracao-service
+        stripPrefix: true
+    hardware-item-configuracao-service:
+        path: /hardware-item-configuracao-service/**
+        serviceId: hardware-item-configuracao
+        stripPrefix: true
+    predictor-item-configuracao-composite:
+        path: /predictor-item-configuracao-composite/**
+        serviceId: predictor-item-configuracao-composite
+        stripPrefix: true
