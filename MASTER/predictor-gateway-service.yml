@@ -9,15 +9,15 @@ zuul:
   debug:
     request: true
   routes:
-    item-configuracao-service:
-        path: /item-configuracao-service/**
-        serviceId: item-configuracao-service
+    card-service:
+        path: /card-service/**
+        serviceId: card-service
         stripPrefix: true
-    predictor-app-test:
-        path: /predictor-app-test/**
-        serviceId: predictor-app-test
+    statement-service:
+        path: /statement-service/**
+        serviceId: statement-service
         stripPrefix: true
-    predictor-item-configuracao-composite:
-        path: /predictor-item-configuracao-composite/**
-        serviceId: predictor-item-configuracao-composite
+    card-statement-composite:
+        path: /card-statement-composite/**
+        serviceId: card-statement-composite
         stripPrefix: true
