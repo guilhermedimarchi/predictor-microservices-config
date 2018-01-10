@@ -1,0 +1,11 @@
+turbine:
+  amqp:
+    port: 8989
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    serviceUrl:
+      defaultZone: http://predictor-discovery-service:8761/eureka/
+server:
+  port: 8989
