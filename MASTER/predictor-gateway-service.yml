@@ -19,7 +19,6 @@ endpoints:
 
 zuul:
   ignoredServices: "*"
-  prefix: /api
   debug:
     request: true
   routes:
