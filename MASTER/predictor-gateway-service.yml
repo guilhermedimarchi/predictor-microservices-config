@@ -18,19 +18,32 @@ endpoints:
     sensitive: false
 
 zuul:
-  ignoredServices: "*"
+  ignoredServices: ""
+  prefix: /api
   debug:
     request: true
   routes:
+    card-service:
+        path: /card-service/
+        serviceId: card-service
+        stripPrefix: true
+    statement-service:
+        path: /statement-service/
+        serviceId: statement-service
+        stripPrefix: true
+    card-statement-composite:
+        path: /card-statement-composite/
+        serviceId: card-statement-composite
+        stripPrefix: true
     predictor-test-service:
-        path: /predictor-test-service/**
+        path: /predictor-test-service/
         serviceId: predictor-test-service
         stripPrefix: true
     microservico-autenticacao:
-        path: /microservico-autenticacao/**
+        path: /microservico-autenticacao/*
         serviceId: microservico-autenticacao
         stripPrefix: true
     microservico-upload-padrao:
-        path: /microservico-upload-padrao/**
+        path: /microservico-upload-padrao/
         serviceId: microservico-upload-padrao
         stripPrefix: true
