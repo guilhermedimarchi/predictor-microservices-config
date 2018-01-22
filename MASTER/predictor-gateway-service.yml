@@ -22,11 +22,15 @@ zuul:
   debug:
     request: true
   routes:
-    microservico-upload-padrao:
-        path: /microservico-upload-padrao/**
-        serviceId: microservico-upload-padrao
-        stripPrefix: true
     predictor-test-service:
         path: /predictor-test-service/**
         serviceId: predictor-test-service
+        stripPrefix: true
+    microservico-autenticacao:
+        path: /microservico-autenticacao/**
+        serviceId: microservico-autenticacao
+        stripPrefix: true
+    microservico-upload-padrao:
+        path: /microservico-upload-padrao/**
+        serviceId: microservico-upload-padrao
         stripPrefix: true
