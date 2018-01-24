@@ -48,6 +48,6 @@ zuul:
         serviceId: microservico-upload-padrao
         stripPrefix: true
     microservico-upload-unificado:
-        path: zuul/microservico-upload-unificado/
+        path: /zuul/microservico-upload-unificado/
         serviceId: microservico-upload-unificado
         stripPrefix: false
