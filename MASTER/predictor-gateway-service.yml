@@ -19,7 +19,6 @@ endpoints:
 
 zuul:
   ignoredServices: ""
-  prefix: /api
   debug:
     request: true
   routes:
@@ -50,4 +49,3 @@ zuul:
     microservico-upload-unificado:
         path: /zuul/microservico-upload-unificado/
         serviceId: microservico-upload-unificado
-        stripPrefix: false
