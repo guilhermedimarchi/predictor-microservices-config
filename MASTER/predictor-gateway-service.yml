@@ -55,3 +55,7 @@ zuul:
         path: /microservico-upload-transacao/
         serviceId: microservico-upload-transacao
         stripPrefix: true
+   microservico-calculo-estado:
+        path: /microservico-calculo-estado/
+        serviceId: microservico-calculo-estado
+        stripPrefix: true
