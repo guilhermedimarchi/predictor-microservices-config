@@ -84,7 +84,7 @@ feign:
         readTimeout: 50000
         loggerLevel: basic
         
-zuul.host.socket-timeout-millis=30000
+zuul.host.socket-timeout-millis: 30000
 hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 60000
 ribbon:
   ConnectTimeout: 30000
