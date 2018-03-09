@@ -5,6 +5,17 @@ eureka:
     client:
         serviceUrl:
              defaultZone: http://127.0.0.1:8761/eureka/
+             
+hystrix.command.default.execution.timeout.enabled=false
+hystrix.command.messages.execution.isolation.strategy=THREAD
+hystrix.command.messages.execution.isolation.thread.timeoutInMilliseconds= 100000
+ribbon.eureka.enabled=false
+zuul.host.connect-timeout-millis=100000
+zuul.host.socket-timeout-millis=100000
+
+ribbon:
+  ConnectTimeout: 120000
+  ReadTimeout: 120000
 
 info:
   component: Gateway API - Zuul
@@ -76,19 +87,4 @@ zuul:
         serviceId: microservico-orquestrador
         stripPrefix: true
         
-feign:
-  client:
-    config:
-      default:
-        connectTimeout: 50000
-        readTimeout: 50000
-        loggerLevel: basic
-        
-zuul.host.socket-timeout-millis: 30000
-hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 60000
-ribbon:
-  ConnectTimeout: 30000
-  ReadTimeout: 60000
-multipart:
-    maxFileSize: 128MB
-    maxRequestSize: 128MB
+
