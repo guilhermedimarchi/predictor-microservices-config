@@ -76,6 +76,14 @@ zuul:
         serviceId: microservico-orquestrador
         stripPrefix: true
         
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 5000
+        readTimeout: 5000
+        loggerLevel: basic
+        
 zuul.host.socket-timeout-millis=30000
 hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 60000
 ribbon:
