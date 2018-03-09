@@ -71,4 +71,11 @@ zuul:
         path: /microservico-orquestrador/
         serviceId: microservico-orquestrador
         stripPrefix: true
-
+        
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 60000
+ribbon:
+  ConnectTimeout: 3000
+  ReadTimeout: 60000
+multipart:
+    maxFileSize: 128MB
+    maxRequestSize: 128MB
