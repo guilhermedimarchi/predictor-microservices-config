@@ -80,8 +80,8 @@ feign:
   client:
     config:
       default:
-        connectTimeout: 5000
-        readTimeout: 5000
+        connectTimeout: 50000
+        readTimeout: 50000
         loggerLevel: basic
         
 zuul.host.socket-timeout-millis=30000
