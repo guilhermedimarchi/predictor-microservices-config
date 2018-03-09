@@ -13,10 +13,6 @@ ribbon.eureka.enabled: false
 zuul.host.connect-timeout-millis: 100000
 zuul.host.socket-timeout-millis: 100000
 
-ribbon:
-  ConnectTimeout: 120000
-  ReadTimeout: 120000
-
 info:
   component: Gateway API - Zuul
  
