@@ -18,57 +18,61 @@ endpoints:
     sensitive: false
 
 zuul:
-  ignoredServices: ""
+  ignoredServices: "*"
   prefix: /api
   debug:
     request: true
   routes:
     card-service:
-        path: /card-service/
+        path: /card-service/**
         serviceId: card-service
         stripPrefix: true
     statement-service:
-        path: /statement-service/
+        path: /statement-service/**
         serviceId: statement-service
         stripPrefix: true
     card-statement-composite:
-        path: /card-statement-composite/
+        path: /card-statement-composite/**
         serviceId: card-statement-composite
         stripPrefix: true
     predictor-test-service:
-        path: /predictor-test-service/
+        path: /predictor-test-service/**
         serviceId: predictor-test-service
         stripPrefix: true
     microservico-autenticacao:
-        path: /microservico-autenticacao/*
+        path: /microservico-autenticacao/**
         serviceId: microservico-autenticacao
         stripPrefix: true
     microservico-upload-padrao:
-        path: /microservico-upload-padrao/
+        path: /microservico-upload-padrao/**
         serviceId: microservico-upload-padrao
         stripPrefix: true
     microservico-upload-unificado:
-        path: /microservico-upload-unificado/
+        path: /microservico-upload-unificado/**
         serviceId: microservico-upload-unificado
         stripPrefix: true
     microservico-upload-transacao:
-        path: /microservico-upload-transacao/
+        path: /microservico-upload-transacao/**
         serviceId: microservico-upload-transacao
         stripPrefix: true
-    microservico-calculo-estado:
-        path: /microservico-calculo-estado/
-        serviceId: microservico-calculo-estado
-        stripPrefix: true
     microservico-sumarizacao:
-        path: /microservico-sumarizacao/
+        path: /microservico-sumarizacao/**
         serviceId: microservico-sumarizacao
         stripPrefix: true
+    microservico-projecao-longo-prazo:
+        path: /microservico-projecao-longo-prazo/**
+        serviceId: microservico-projecao-longo-prazo
+        stripPrefix: true
+    microservico-calculo-estado:
+        path: /microservico-calculo-estado/**
+        serviceId: microservico-calculo-estado
+        stripPrefix: true
     microservico-periodo-sombra:
-        path: /microservico-periodo-sombra/
+        path: /microservico-periodo-sombra/**
         serviceId: microservico-periodo-sombra
         stripPrefix: true
     microservico-orquestrador:
-        path: /microservico-orquestrador/
+        path: /microservico-orquestrador/**
         serviceId: microservico-orquestrador
         stripPrefix: true
         
