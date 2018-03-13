@@ -71,7 +71,7 @@ zuul:
         path: /microservico-periodo-sombra/**
         serviceId: microservico-periodo-sombra
         stripPrefix: true
-    microservico-orquestrador:
-        path: /microservico-orquestrador/**
-        serviceId: microservico-orquestrador
+    microservico-concentrador-sumarizacao:
+        path: /microservico-concentrador-sumarizacao/**
+        serviceId: microservico-concentrador-sumarizacao
         stripPrefix: true
